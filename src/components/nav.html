@@ -1,0 +1,420 @@
+<nav class="hidden md:block" role="navigation" aria-label="Main navigation">
+  <ul class="flex items-center space-x-8" role="menubar">
+    <li role="none">
+      <button
+        class="nav-button"
+        role="menuitem"
+        aria-haspopup="true"
+        aria-expanded="false"
+        aria-controls="categories-megamenu"
+        data-megamenu="categories"
+      >
+        Categories
+        <svg
+          class="ml-1 h-4 w-4"
+          fill="currentColor"
+          viewBox="0 0 20 20"
+          aria-hidden="true"
+        >
+          <path
+            fill-rule="evenodd"
+            d="M5.293 7.293a1 1 0 011.414 0L10 10.586l3.293-3.293a1 1 0 111.414 1.414l-4 4a1 1 0 01-1.414 0l-4-4a1 1 0 010-1.414z"
+            clip-rule="evenodd"
+          />
+        </svg>
+      </button>
+
+      <!-- Categories Mega Menu -->
+      <div
+        id="categories-megamenu"
+        class="megamenu"
+        role="menu"
+        aria-labelledby="categories-button"
+      >
+        <div class="megamenu-container">
+          <div class="grid grid-cols-4 gap-8">
+            <!-- Electronics Section -->
+            <div class="megamenu-section">
+              <h3 class="megamenu-heading">Electronics</h3>
+              <ul
+                class="megamenu-list"
+                role="group"
+                aria-labelledby="electronics-heading"
+              >
+                <li role="none">
+                  <a
+                    href="#"
+                    class="megamenu-item"
+                    role="menuitem"
+                    tabindex="-1"
+                    >Smartphones</a
+                  >
+                </li>
+                <li role="none">
+                  <a
+                    href="#"
+                    class="megamenu-item"
+                    role="menuitem"
+                    tabindex="-1"
+                    >Laptops</a
+                  >
+                </li>
+                <li role="none">
+                  <a
+                    href="#"
+                    class="megamenu-item"
+                    role="menuitem"
+                    tabindex="-1"
+                    >Tablets</a
+                  >
+                </li>
+                <li role="none">
+                  <a
+                    href="#"
+                    class="megamenu-item"
+                    role="menuitem"
+                    tabindex="-1"
+                    >Headphones</a
+                  >
+                </li>
+                <li role="none">
+                  <a
+                    href="#"
+                    class="megamenu-item"
+                    role="menuitem"
+                    tabindex="-1"
+                    >Smart Watches</a
+                  >
+                </li>
+              </ul>
+            </div>
+
+            <!-- Clothing Section -->
+            <div class="megamenu-section">
+              <h3 class="megamenu-heading">Clothing</h3>
+              <ul
+                class="megamenu-list"
+                role="group"
+                aria-labelledby="clothing-heading"
+              >
+                <li role="none">
+                  <a
+                    href="#"
+                    class="megamenu-item"
+                    role="menuitem"
+                    tabindex="-1"
+                    >Men's Clothing</a
+                  >
+                </li>
+                <li role="none">
+                  <a
+                    href="#"
+                    class="megamenu-item"
+                    role="menuitem"
+                    tabindex="-1"
+                    >Women's Clothing</a
+                  >
+                </li>
+                <li role="none">
+                  <a
+                    href="#"
+                    class="megamenu-item"
+                    role="menuitem"
+                    tabindex="-1"
+                    >Kids' Clothing</a
+                  >
+                </li>
+                <li role="none">
+                  <a
+                    href="#"
+                    class="megamenu-item"
+                    role="menuitem"
+                    tabindex="-1"
+                    >Shoes</a
+                  >
+                </li>
+                <li role="none">
+                  <a
+                    href="#"
+                    class="megamenu-item"
+                    role="menuitem"
+                    tabindex="-1"
+                    >Accessories</a
+                  >
+                </li>
+              </ul>
+            </div>
+
+            <!-- Home & Garden Section -->
+            <div class="megamenu-section">
+              <h3 class="megamenu-heading">Home & Garden</h3>
+              <ul
+                class="megamenu-list"
+                role="group"
+                aria-labelledby="home-heading"
+              >
+                <li role="none">
+                  <a
+                    href="#"
+                    class="megamenu-item"
+                    role="menuitem"
+                    tabindex="-1"
+                    >Furniture</a
+                  >
+                </li>
+                <li role="none">
+                  <a
+                    href="#"
+                    class="megamenu-item"
+                    role="menuitem"
+                    tabindex="-1"
+                    >Kitchen</a
+                  >
+                </li>
+                <li role="none">
+                  <a
+                    href="#"
+                    class="megamenu-item"
+                    role="menuitem"
+                    tabindex="-1"
+                    >Bedding</a
+                  >
+                </li>
+                <li role="none">
+                  <a
+                    href="#"
+                    class="megamenu-item"
+                    role="menuitem"
+                    tabindex="-1"
+                    >Garden Tools</a
+                  >
+                </li>
+                <li role="none">
+                  <a
+                    href="#"
+                    class="megamenu-item"
+                    role="menuitem"
+                    tabindex="-1"
+                    >Décor</a
+                  >
+                </li>
+              </ul>
+            </div>
+
+            <!-- Featured Section -->
+            <div class="megamenu-section">
+              <h3 class="megamenu-heading">Featured</h3>
+              <div class="megamenu-featured">
+                <div class="megamenu-featured-item">
+                  <img
+                    src="https://images.unsplash.com/photo-1560472354-b33ff0c44a43?w=300&h=200&fit=crop"
+                    alt=""
+                    class="megamenu-featured-image"
+                    aria-hidden="true"
+                  />
+                  <div class="megamenu-featured-content">
+                    <h4 class="megamenu-featured-title">Latest Tech</h4>
+                    <p class="megamenu-featured-desc">
+                      Discover the newest gadgets
+                    </p>
+                    <a
+                      href="#"
+                      class="megamenu-featured-link"
+                      role="menuitem"
+                      tabindex="-1"
+                      >Shop Now</a
+                    >
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </li>
+
+    <li role="none">
+      <button
+        class="nav-button"
+        role="menuitem"
+        aria-haspopup="true"
+        aria-expanded="false"
+        aria-controls="brands-megamenu"
+        data-megamenu="brands"
+      >
+        Brands
+        <svg
+          class="ml-1 h-4 w-4"
+          fill="currentColor"
+          viewBox="0 0 20 20"
+          aria-hidden="true"
+        >
+          <path
+            fill-rule="evenodd"
+            d="M5.293 7.293a1 1 0 011.414 0L10 10.586l3.293-3.293a1 1 0 111.414 1.414l-4 4a1 1 0 01-1.414 0l-4-4a1 1 0 010-1.414z"
+            clip-rule="evenodd"
+          />
+        </svg>
+      </button>
+
+      <!-- Brands Mega Menu -->
+      <div
+        id="brands-megamenu"
+        class="megamenu"
+        role="menu"
+        aria-labelledby="brands-button"
+      >
+        <div class="megamenu-container">
+          <div class="grid grid-cols-3 gap-8">
+            <!-- Popular Brands -->
+            <div class="megamenu-section">
+              <h3 class="megamenu-heading">Popular Brands</h3>
+              <ul
+                class="megamenu-list"
+                role="group"
+                aria-labelledby="popular-brands-heading"
+              >
+                <li role="none">
+                  <a
+                    href="#"
+                    class="megamenu-item"
+                    role="menuitem"
+                    tabindex="-1"
+                    >Apple</a
+                  >
+                </li>
+                <li role="none">
+                  <a
+                    href="#"
+                    class="megamenu-item"
+                    role="menuitem"
+                    tabindex="-1"
+                    >Samsung</a
+                  >
+                </li>
+                <li role="none">
+                  <a
+                    href="#"
+                    class="megamenu-item"
+                    role="menuitem"
+                    tabindex="-1"
+                    >Nike</a
+                  >
+                </li>
+                <li role="none">
+                  <a
+                    href="#"
+                    class="megamenu-item"
+                    role="menuitem"
+                    tabindex="-1"
+                    >Adidas</a
+                  >
+                </li>
+                <li role="none">
+                  <a
+                    href="#"
+                    class="megamenu-item"
+                    role="menuitem"
+                    tabindex="-1"
+                    >Sony</a
+                  >
+                </li>
+              </ul>
+            </div>
+
+            <!-- Fashion Brands -->
+            <div class="megamenu-section">
+              <h3 class="megamenu-heading">Fashion Brands</h3>
+              <ul
+                class="megamenu-list"
+                role="group"
+                aria-labelledby="fashion-brands-heading"
+              >
+                <li role="none">
+                  <a
+                    href="#"
+                    class="megamenu-item"
+                    role="menuitem"
+                    tabindex="-1"
+                    >Zara</a
+                  >
+                </li>
+                <li role="none">
+                  <a
+                    href="#"
+                    class="megamenu-item"
+                    role="menuitem"
+                    tabindex="-1"
+                    >H&M</a
+                  >
+                </li>
+                <li role="none">
+                  <a
+                    href="#"
+                    class="megamenu-item"
+                    role="menuitem"
+                    tabindex="-1"
+                    >Uniqlo</a
+                  >
+                </li>
+                <li role="none">
+                  <a
+                    href="#"
+                    class="megamenu-item"
+                    role="menuitem"
+                    tabindex="-1"
+                    >Ralph Lauren</a
+                  >
+                </li>
+                <li role="none">
+                  <a
+                    href="#"
+                    class="megamenu-item"
+                    role="menuitem"
+                    tabindex="-1"
+                    >Calvin Klein</a
+                  >
+                </li>
+              </ul>
+            </div>
+
+            <!-- Brand Spotlight -->
+            <div class="megamenu-section">
+              <h3 class="megamenu-heading">Brand Spotlight</h3>
+              <div class="megamenu-featured">
+                <div class="megamenu-featured-item">
+                  <img
+                    src="https://images.unsplash.com/photo-1441986300917-64674bd600d8?w=300&h=200&fit=crop"
+                    alt=""
+                    class="megamenu-featured-image"
+                    aria-hidden="true"
+                  />
+                  <div class="megamenu-featured-content">
+                    <h4 class="megamenu-featured-title">Brand Sale</h4>
+                    <p class="megamenu-featured-desc">
+                      Up to 50% off selected brands
+                    </p>
+                    <a
+                      href="#"
+                      class="megamenu-featured-link"
+                      role="menuitem"
+                      tabindex="-1"
+                      >View Sale</a
+                    >
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </li>
+
+    <li role="none">
+      <a href="#" class="nav-link" role="menuitem">Deals</a>
+    </li>
+    <li role="none">
+      <a href="#" class="nav-link" role="menuitem">About</a>
+    </li>
+  </ul>
+</nav>

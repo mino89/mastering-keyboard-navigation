@@ -1,0 +1,87 @@
+/* Hero Section Styles */
+#hero-section {
+    position: relative;
+    overflow: hidden;
+}
+
+/* Hero Button Animations */
+#hero-section .transition-colors {
+    transition-property: color, background-color, border-color;
+    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+    transition-duration: 200ms;
+}
+
+/* Focus Styles for Hero Elements */
+#hero-section a:focus,
+#hero-section button:focus {
+    outline: 2px solid theme('colors.white');
+    outline-offset: 2px;
+}
+
+/* Hero Text Animation */
+#hero-heading {
+    animation: fadeInUp 0.8s ease-out;
+}
+
+#hero-section p {
+    animation: fadeInUp 0.8s ease-out 0.2s both;
+}
+
+#hero-section .mt-10 {
+    animation: fadeInUp 0.8s ease-out 0.4s both;
+}
+
+@keyframes fadeInUp {
+    from {
+        opacity: 0;
+        transform: translateY(30px);
+    }
+
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+/* Hero Accessibility Features */
+#hero-section .mt-16 {
+    animation: fadeInUp 0.8s ease-out 0.6s both;
+}
+
+/* High contrast mode support */
+@media (prefers-contrast: high) {
+    #hero-section {
+        background: #000;
+        color: #fff;
+    }
+
+    #hero-section .bg-white {
+        background-color: #fff;
+        color: #000;
+    }
+
+    #hero-section .border-white {
+        border-color: #fff;
+    }
+}
+
+/* Reduced motion support */
+@media (prefers-reduced-motion: reduce) {
+    #hero-section * {
+        animation-duration: 0.01ms !important;
+        animation-iteration-count: 1 !important;
+        transition-duration: 0.01ms !important;
+    }
+}
+
+/* Mobile-specific hero styles */
+@media (max-width: 640px) {
+    #hero-section .text-4xl {
+        font-size: 2.25rem;
+        line-height: 2.5rem;
+    }
+
+    #hero-section .mt-10 {
+        margin-top: 2rem;
+    }
+}

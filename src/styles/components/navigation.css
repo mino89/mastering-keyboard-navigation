@@ -1,0 +1,156 @@
+/* ===========================================
+   NAVIGATION STYLES
+   =========================================== */
+
+/* Navigation Button */
+.nav-button {
+    @apply flex items-center px-3 py-2 text-sm font-medium text-gray-700 rounded-md;
+    @apply hover:text-gray-900 hover:bg-gray-50;
+    @apply focus-visible:outline-2 focus-visible:outline-blue-600 focus-visible:outline-offset-2;
+    @apply transition-colors duration-200;
+}
+
+.nav-button[aria-expanded="true"] {
+    @apply text-gray-900 bg-gray-50;
+}
+
+/* Navigation Link */
+.nav-link {
+    @apply px-3 py-2 text-sm font-medium text-gray-700 rounded-md;
+    @apply hover:text-gray-900 hover:bg-gray-50;
+    @apply focus-visible:outline-2 focus-visible:outline-blue-600 focus-visible:outline-offset-2;
+    @apply transition-colors duration-200;
+}
+
+/* ===========================================
+   MEGA MENU STYLES
+   =========================================== */
+
+/* Mega Menu Container */
+.megamenu {
+    @apply absolute left-1/2 transform -translate-x-1/2 mt-2;
+    @apply w-screen max-w-7xl bg-white rounded-lg shadow-xl ring-1 ring-black/5;
+    @apply opacity-0 invisible scale-95 transition-all duration-300 origin-top;
+    @apply z-50;
+
+    width: 100vw;
+    max-width: 100vw;
+}
+
+.megamenu.show {
+    @apply opacity-100 visible scale-100;
+}
+
+/* Mega Menu Inner Container */
+.megamenu-container {
+    @apply mx-auto max-w-7xl px-8 py-8;
+}
+
+/* Mega Menu Section */
+.megamenu-section {
+    @apply space-y-4;
+}
+
+/* Mega Menu Heading */
+.megamenu-heading {
+    @apply text-sm font-semibold text-gray-900 tracking-wide uppercase;
+    @apply border-b border-gray-200 pb-2;
+}
+
+/* Mega Menu List */
+.megamenu-list {
+    @apply space-y-2;
+}
+
+/* Mega Menu Items */
+.megamenu-item {
+    @apply block px-3 py-2 text-sm text-gray-600 rounded-md;
+    @apply hover:bg-gray-50 hover:text-gray-900;
+    @apply focus-visible:outline-2 focus-visible:outline-blue-600 focus-visible:outline-offset-2 focus-visible:bg-gray-50;
+    @apply transition-colors duration-200;
+}
+
+/* Featured Section Styles */
+.megamenu-featured {
+    @apply space-y-4;
+}
+
+.megamenu-featured-item {
+    @apply bg-gray-50 rounded-lg p-4 space-y-3;
+}
+
+.megamenu-featured-image {
+    @apply w-full h-32 object-cover rounded-md;
+}
+
+.megamenu-featured-content {
+    @apply space-y-2;
+}
+
+.megamenu-featured-title {
+    @apply text-sm font-semibold text-gray-900;
+}
+
+.megamenu-featured-desc {
+    @apply text-xs text-gray-600;
+}
+
+.megamenu-featured-link {
+    @apply inline-block px-3 py-1 text-xs font-medium text-blue-600 bg-blue-50 rounded-md;
+    @apply hover:bg-blue-100 hover:text-blue-700;
+    @apply focus-visible:outline-2 focus-visible:outline-blue-600 focus-visible:outline-offset-2;
+    @apply transition-colors duration-200;
+}
+
+/* ===========================================
+   RESPONSIVE MEGA MENU
+   =========================================== */
+
+@media (max-width: 1280px) {
+    .megamenu-container {
+        @apply px-6;
+    }
+}
+
+@media (max-width: 1024px) {
+    .megamenu-container {
+        @apply px-4;
+    }
+
+    .megamenu-container .grid-cols-4 {
+        @apply grid-cols-2;
+    }
+
+    .megamenu-container .grid-cols-3 {
+        @apply grid-cols-2;
+    }
+}
+
+@media (max-width: 768px) {
+    .megamenu {
+        @apply hidden;
+        /* Hide mega menu on mobile, use mobile menu instead */
+    }
+}
+
+/* ===========================================
+   LEGACY DROPDOWN STYLES (for fallback)
+   =========================================== */
+
+/* Dropdown Menu */
+.dropdown-menu {
+    @apply absolute top-full left-0 mt-2 w-48 bg-white rounded-md shadow-lg ring-1 ring-black/5;
+    @apply opacity-0 invisible scale-95 transition-all duration-200 origin-top-left;
+    @apply z-50;
+}
+
+.dropdown-menu.show {
+    @apply opacity-100 visible scale-100;
+}
+
+.dropdown-item {
+    @apply block px-4 py-2 text-sm text-gray-700;
+    @apply hover:bg-gray-50 hover:text-gray-900;
+    @apply focus-visible:outline-2 focus-visible:outline-blue-600 focus-visible:outline-offset-2 focus-visible:bg-gray-50;
+    @apply transition-colors duration-200;
+}

@@ -1,0 +1,150 @@
+<!-- Modal Component -->
+<div
+  id="about-modal"
+  class="modal"
+  role="dialog"
+  aria-labelledby="about-modal-title"
+  aria-describedby="about-modal-description"
+  aria-hidden="true"
+  tabindex="-1"
+>
+  <!-- Modal Backdrop -->
+  <div
+    class="modal-backdrop"
+    data-modal-backdrop="about-modal"
+    aria-hidden="true"
+  ></div>
+
+  <!-- Modal Container -->
+  <div class="modal-container">
+    <!-- Modal Content -->
+    <div class="modal-content">
+      <!-- Modal Header -->
+      <div class="modal-header">
+        <h2 id="about-modal-title" class="modal-title">
+          About AccessiShop
+        </h2>
+        <button
+          type="button"
+          class="modal-close"
+          data-modal-close="about-modal"
+          aria-label="Close modal"
+        >
+          <svg
+            class="h-6 w-6"
+            fill="none"
+            viewBox="0 0 24 24"
+            stroke="currentColor"
+            aria-hidden="true"
+          >
+            <path
+              stroke-linecap="round"
+              stroke-linejoin="round"
+              stroke-width="2"
+              d="M6 18L18 6M6 6l12 12"
+            />
+          </svg>
+        </button>
+      </div>
+
+      <!-- Modal Body -->
+      <div class="modal-body">
+        <div id="about-modal-description">
+          <p class="mb-4 text-gray-700">
+            Welcome to AccessiShop, the premier e-commerce platform designed with accessibility at its core. 
+            We believe that online shopping should be available to everyone, regardless of their abilities or 
+            the technologies they use to browse the web.
+          </p>
+          
+          <h3 class="mb-3 text-lg font-semibold text-gray-900">Our Commitment to Accessibility</h3>
+          
+          <div class="space-y-4">
+            <div class="flex items-start">
+              <div class="mr-3 mt-1 flex h-6 w-6 flex-shrink-0 items-center justify-center rounded-full bg-indigo-100">
+                <svg class="h-3 w-3 text-indigo-600" fill="currentColor" viewBox="0 0 20 20" aria-hidden="true">
+                  <path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd" />
+                </svg>
+              </div>
+              <div>
+                <h4 class="font-medium text-gray-900">Full Keyboard Navigation</h4>
+                <p class="text-sm text-gray-600">
+                  Navigate our entire site using only your keyboard. Every interactive element is accessible via Tab, Enter, and arrow keys.
+                </p>
+              </div>
+            </div>
+
+            <div class="flex items-start">
+              <div class="mr-3 mt-1 flex h-6 w-6 flex-shrink-0 items-center justify-center rounded-full bg-indigo-100">
+                <svg class="h-3 w-3 text-indigo-600" fill="currentColor" viewBox="0 0 20 20" aria-hidden="true">
+                  <path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd" />
+                </svg>
+              </div>
+              <div>
+                <h4 class="font-medium text-gray-900">Screen Reader Optimized</h4>
+                <p class="text-sm text-gray-600">
+                  Comprehensive ARIA labels, landmarks, and semantic HTML ensure perfect compatibility with all screen readers.
+                </p>
+              </div>
+            </div>
+
+            <div class="flex items-start">
+              <div class="mr-3 mt-1 flex h-6 w-6 flex-shrink-0 items-center justify-center rounded-full bg-indigo-100">
+                <svg class="h-3 w-3 text-indigo-600" fill="currentColor" viewBox="0 0 20 20" aria-hidden="true">
+                  <path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd" />
+                </svg>
+              </div>
+              <div>
+                <h4 class="font-medium text-gray-900">WCAG 2.1 AA Compliant</h4>
+                <p class="text-sm text-gray-600">
+                  We exceed industry standards for web accessibility, ensuring our site meets all WCAG 2.1 Level AA requirements.
+                </p>
+              </div>
+            </div>
+
+            <div class="flex items-start">
+              <div class="mr-3 mt-1 flex h-6 w-6 flex-shrink-0 items-center justify-center rounded-full bg-indigo-100">
+                <svg class="h-3 w-3 text-indigo-600" fill="currentColor" viewBox="0 0 20 20" aria-hidden="true">
+                  <path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd" />
+                </svg>
+              </div>
+              <div>
+                <h4 class="font-medium text-gray-900">High Contrast & Zoom Support</h4>
+                <p class="text-sm text-gray-600">
+                  Our design adapts to high contrast modes and supports zoom levels up to 400% without loss of functionality.
+                </p>
+              </div>
+            </div>
+          </div>
+
+          <div class="mt-6 rounded-lg bg-indigo-50 p-4">
+            <h4 class="font-medium text-indigo-900">Need Help?</h4>
+            <p class="mt-1 text-sm text-indigo-700">
+              If you encounter any accessibility barriers while using our site, please contact our support team at 
+              <a href="mailto:accessibility@accessishop.com" class="font-medium underline hover:no-underline">
+                accessibility@accessishop.com
+              </a>
+            </p>
+          </div>
+        </div>
+      </div>
+
+      <!-- Modal Footer -->
+      <div class="modal-footer">
+        <button
+          type="button"
+          class="btn-secondary"
+          data-modal-close="about-modal"
+        >
+          Close
+        </button>
+        <a
+          href="#main-content"
+          class="btn-primary"
+          data-modal-close="about-modal"
+        >
+          Start Shopping
+        </a>
+      </div>
+    </div>
+  </div>
+</div>

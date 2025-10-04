@@ -1,0 +1,18 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="icon" type="image/svg+xml" href="/src/vite.svg" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="/src/styles/main.css" />
+    <title>{{title}}</title>
+  </head>
+  <body class="bg-gray-50 text-gray-900">
+    <!-- Skip to main content link for keyboard navigation -->
+    <include src="components/skip-to-main.html"></include>
+    <include src="components/header.html"></include>
+    <block name="body"></block>
+    <include src="components/footer.html"></include>
+    <script type="module" src="/src/scripts/main.js"></script>
+  </body>
+</html>

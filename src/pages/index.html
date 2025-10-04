@@ -1,0 +1,285 @@
+<extends
+  src="layouts/main.html"
+  locals='{"title": "AccessiShop - Mastering Keyboard Navigation"}'
+>
+  <block name="body">
+    <!-- Hero Section -->
+    <include src="components/hero.html"></include>
+
+    <!-- Main Content -->
+    <main id="main-content" role="main" class="min-h-screen py-8">
+      <div class="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
+        <!-- Page Header -->
+        <div class="mb-8">
+          <h1 class="mb-2 text-3xl font-bold text-gray-900">
+            Featured Products
+          </h1>
+          <p class="text-gray-600">
+            Discover our latest collection with full keyboard accessibility
+          </p>
+        </div>
+
+        <!-- Filters -->
+        <div class="mb-6">
+          <div class="flex flex-wrap items-center gap-4">
+            <label for="sort" class="text-sm font-medium text-gray-700"
+              >Sort by:</label
+            >
+            <select id="sort" class="filter-select">
+              <option value="featured">Featured</option>
+              <option value="price-low">Price: Low to High</option>
+              <option value="price-high">Price: High to Low</option>
+              <option value="rating">Customer Rating</option>
+            </select>
+
+            <label
+              for="category-filter"
+              class="text-sm font-medium text-gray-700"
+              >Category:</label
+            >
+            <select id="category-filter" class="filter-select">
+              <option value="all">All Categories</option>
+              <option value="electronics">Electronics</option>
+              <option value="clothing">Clothing</option>
+              <option value="home">Home & Garden</option>
+            </select>
+          </div>
+        </div>
+
+        <!-- Products Grid -->
+        <div
+          class="grid grid-cols-1 gap-6 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4"
+          role="region"
+          aria-label="Products"
+        >
+          <!-- Product Card 1 -->
+          <article class="product-card group">
+            <div
+              class="mb-4 aspect-square overflow-hidden rounded-lg bg-gray-200"
+            >
+              <img
+                src="https://images.unsplash.com/photo-1505740420928-5e560c06d30e?w=400&h=400&fit=crop"
+                alt=""
+                class="h-full w-full object-cover transition-transform duration-200 group-hover:scale-105"
+              />
+            </div>
+            <div class="space-y-2">
+              <h3 class="text-lg font-semibold text-gray-900">
+                <a
+                  href="#"
+                  class="product-link focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-blue-600"
+                >
+                  Wireless Headphones
+                  <span class="sr-only">, $99.99</span>
+                </a>
+              </h3>
+              <p class="text-sm text-gray-600">
+                Premium quality wireless headphones with noise cancellation
+              </p>
+              <div
+                class="flex items-center space-x-1"
+                role="img"
+                aria-label="4.5 out of 5 stars"
+              >
+                <svg
+                  class="h-4 w-4 text-yellow-400"
+                  fill="currentColor"
+                  viewBox="0 0 20 20"
+                  aria-hidden="true"
+                >
+                  <path
+                    d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z"
+                  />
+                </svg>
+                <span class="text-sm text-gray-600">(127 reviews)</span>
+              </div>
+              <div class="flex items-center justify-between">
+                <span class="text-xl font-bold text-gray-900">$99.99</span>
+                <button class="btn-primary" aria-describedby="cart-help-1">
+                  Add to Cart
+                </button>
+                <div id="cart-help-1" class="sr-only">
+                  Add Wireless Headphones to shopping cart
+                </div>
+              </div>
+            </div>
+          </article>
+
+          <!-- Product Card 2 -->
+          <article class="product-card group">
+            <div
+              class="mb-4 aspect-square overflow-hidden rounded-lg bg-gray-200"
+            >
+              <img
+                src="https://images.unsplash.com/photo-1523275335684-37898b6baf30?w=400&h=400&fit=crop"
+                alt=""
+                class="h-full w-full object-cover transition-transform duration-200 group-hover:scale-105"
+              />
+            </div>
+            <div class="space-y-2">
+              <h3 class="text-lg font-semibold text-gray-900">
+                <a
+                  href="#"
+                  class="product-link focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-blue-600"
+                >
+                  Smart Watch
+                  <span class="sr-only">, $299.99</span>
+                </a>
+              </h3>
+              <p class="text-sm text-gray-600">
+                Advanced fitness tracking with heart rate monitor
+              </p>
+              <div
+                class="flex items-center space-x-1"
+                role="img"
+                aria-label="4.8 out of 5 stars"
+              >
+                <svg
+                  class="h-4 w-4 text-yellow-400"
+                  fill="currentColor"
+                  viewBox="0 0 20 20"
+                  aria-hidden="true"
+                >
+                  <path
+                    d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z"
+                  />
+                </svg>
+                <span class="text-sm text-gray-600">(89 reviews)</span>
+              </div>
+              <div class="flex items-center justify-between">
+                <span class="text-xl font-bold text-gray-900">$299.99</span>
+                <button class="btn-primary" aria-describedby="cart-help-2">
+                  Add to Cart
+                </button>
+                <div id="cart-help-2" class="sr-only">
+                  Add Smart Watch to shopping cart
+                </div>
+              </div>
+            </div>
+          </article>
+
+          <!-- Product Card 3 -->
+          <article class="product-card group">
+            <div
+              class="mb-4 aspect-square overflow-hidden rounded-lg bg-gray-200"
+            >
+              <img
+                src="https://images.unsplash.com/photo-1542291026-7eec264c27ff?w=400&h=400&fit=crop"
+                alt=""
+                class="h-full w-full object-cover transition-transform duration-200 group-hover:scale-105"
+              />
+            </div>
+            <div class="space-y-2">
+              <h3 class="text-lg font-semibold text-gray-900">
+                <a
+                  href="#"
+                  class="product-link focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-blue-600"
+                >
+                  Running Shoes
+                  <span class="sr-only">, $149.99</span>
+                </a>
+              </h3>
+              <p class="text-sm text-gray-600">
+                Comfortable running shoes with advanced cushioning
+              </p>
+              <div
+                class="flex items-center space-x-1"
+                role="img"
+                aria-label="4.6 out of 5 stars"
+              >
+                <svg
+                  class="h-4 w-4 text-yellow-400"
+                  fill="currentColor"
+                  viewBox="0 0 20 20"
+                  aria-hidden="true"
+                >
+                  <path
+                    d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z"
+                  />
+                </svg>
+                <span class="text-sm text-gray-600">(203 reviews)</span>
+              </div>
+              <div class="flex items-center justify-between">
+                <span class="text-xl font-bold text-gray-900">$149.99</span>
+                <button class="btn-primary" aria-describedby="cart-help-3">
+                  Add to Cart
+                </button>
+                <div id="cart-help-3" class="sr-only">
+                  Add Running Shoes to shopping cart
+                </div>
+              </div>
+            </div>
+          </article>
+
+          <!-- Product Card 4 -->
+          <article class="product-card group">
+            <div
+              class="mb-4 aspect-square overflow-hidden rounded-lg bg-gray-200"
+            >
+              <img
+                src="https://images.unsplash.com/photo-1588099768523-f4e6a5679d88?w=400&h=400&fit=crop"
+                alt=""
+                class="h-full w-full object-cover transition-transform duration-200 group-hover:scale-105"
+              />
+            </div>
+            <div class="space-y-2">
+              <h3 class="text-lg font-semibold text-gray-900">
+                <a
+                  href="#"
+                  class="product-link focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-blue-600"
+                >
+                  Coffee Maker
+                  <span class="sr-only">, $79.99</span>
+                </a>
+              </h3>
+              <p class="text-sm text-gray-600">
+                Programmable coffee maker with thermal carafe
+              </p>
+              <div
+                class="flex items-center space-x-1"
+                role="img"
+                aria-label="4.3 out of 5 stars"
+              >
+                <svg
+                  class="h-4 w-4 text-yellow-400"
+                  fill="currentColor"
+                  viewBox="0 0 20 20"
+                  aria-hidden="true"
+                >
+                  <path
+                    d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z"
+                  />
+                </svg>
+                <span class="text-sm text-gray-600">(156 reviews)</span>
+              </div>
+              <div class="flex items-center justify-between">
+                <span class="text-xl font-bold text-gray-900">$79.99</span>
+                <button class="btn-primary" aria-describedby="cart-help-4">
+                  Add to Cart
+                </button>
+                <div id="cart-help-4" class="sr-only">
+                  Add Coffee Maker to shopping cart
+                </div>
+              </div>
+            </div>
+          </article>
+        </div>
+
+        <!-- Load More Button -->
+        <div class="mt-12 text-center">
+          <button class="btn-secondary" aria-describedby="load-more-help">
+            Load More Products
+          </button>
+          <div id="load-more-help" class="sr-only">
+            Load 8 more products in the current category
+          </div>
+        </div>
+      </div>
+    </main>
+
+    <!-- Modal Components -->
+    <include src="components/modal.html"></include>
+
+    <!-- Footer -->
+  </block>
+</extends>

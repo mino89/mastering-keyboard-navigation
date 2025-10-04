@@ -1,0 +1,54 @@
+/* ===========================================
+   ACCESSIBILITY & KEYBOARD NAVIGATION STYLES
+   =========================================== */
+
+/* Skip to main content link - only visible when focused */
+.skip-link {
+    position: absolute;
+    top: -10rem;
+    /* Off-screen initially */
+    left: 1rem;
+    z-index: 50;
+
+    padding: 0.5rem 1rem;
+    border-radius: 0.375rem;
+    /* rounded-md */
+    font-size: 0.875rem;
+    /* text-sm */
+    font-weight: 500;
+    /* font-medium */
+    transition: top 0.3s ease-in-out;
+    @apply bg-amber-500 text-white;
+}
+
+.skip-link:focus {
+    top: 1rem;
+    z-index: 100;
+}
+
+.skip-link:focus-visible {
+    outline: 2px solid;
+    outline-offset: 3px;
+    @apply outline-red-500;
+}
+
+/* Screen Reader Only - visually hidden but available to screen readers */
+.sr-only {
+    position: absolute;
+    width: 1px;
+    height: 1px;
+    padding: 0;
+    margin: -1px;
+    overflow: hidden;
+    clip: rect(0, 0, 0, 0);
+    white-space: nowrap;
+    border-width: 0;
+}
+
+/* Focus Visible Utility */
+.focus-ring:focus-visible {
+    outline: 2px solid rgb(37 99 235);
+    /* blue-600 */
+    outline-offset: 2px;
+    box-shadow: none;
+}
