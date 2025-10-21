@@ -32,7 +32,7 @@
     "vituum": "^1.2.0"
   },
   "dependencies": {
-    "@tailwindcss/vite": "^4.1.14",
+    "@tailwindcss/vite": "^4.1.15",
     "cssnano": "^7.1.1"
   }
 }
