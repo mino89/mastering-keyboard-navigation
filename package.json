@@ -22,7 +22,7 @@
     "format": "prettier --write './src/**/*.{html,js,jsx,ts,tsx}'"
   },
   "devDependencies": {
-    "@tailwindcss/postcss": "^4.1.14",
+    "@tailwindcss/postcss": "^4.1.16",
     "@vituum/vite-plugin-posthtml": "^1.1.0",
     "postcss": "^8.5.6",
     "prettier": "^3.6.2",
