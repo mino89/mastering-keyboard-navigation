@@ -23,16 +23,16 @@
   },
   "devDependencies": {
     "@tailwindcss/postcss": "^4.1.14",
-    "@vituum/vite-plugin-posthtml": "^1.1.0",
+    "@vituum/vite-plugin-posthtml": "^2.0.1",
     "postcss": "^8.5.6",
     "prettier": "^3.6.2",
     "prettier-plugin-tailwindcss": "^0.6.14",
     "tailwindcss": "^4.1.14",
-    "vite": "^7.1.9",
-    "vituum": "^1.2.0"
+    "vite": "^8.0.16",
+    "vituum": "^2.0.2"
   },
   "dependencies": {
-    "@tailwindcss/vite": "^4.1.14",
+    "@tailwindcss/vite": "^4.3.1",
     "cssnano": "^7.1.1"
   }
 }
